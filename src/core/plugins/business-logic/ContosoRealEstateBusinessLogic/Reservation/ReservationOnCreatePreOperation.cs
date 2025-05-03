@@ -10,13 +10,13 @@ namespace ContosoRealEstate.BusinessLogic.Plugins;
 /// Plugin development guide: https://docs.microsoft.com/powerapps/developer/common-data-service/plug-ins
 /// Best practices and guidance: https://docs.microsoft.com/powerapps/developer/common-data-service/best-practices/business-logic/
 /// </summary>
-[CrmPluginRegistration(MessageNameEnum.Create, contoso_Reservation.EntityLogicalName, StageEnum.PreValidation, ExecutionModeEnum.Synchronous,
+[CrmPluginRegistration(MessageNameEnum.Create, contoso_Reservation.EntityLogicalName, StageEnum.PreOperation, ExecutionModeEnum.Synchronous,
     "contoso_from,contoso_to,contoso_listing,contoso_nights", 
-    "ReservationOnCreatePreValidation", 1000, IsolationModeEnum.Sandbox)]
-public class ReservationOnCreatePreValidation : ReservationLogic, IPlugin
+    "ReservationOnCreatePreOperation", 1000, IsolationModeEnum.Sandbox)]
+public class ReservationOnCreatePreOperation : ReservationLogic, IPlugin
 {
-    public ReservationOnCreatePreValidation(string unsecureConfiguration, string secureConfiguration)
-        : base(typeof(ReservationOnCreatePreValidation), unsecureConfiguration, secureConfiguration)
+    public ReservationOnCreatePreOperation(string unsecureConfiguration, string secureConfiguration)
+        : base(typeof(ReservationOnCreatePreOperation), unsecureConfiguration, secureConfiguration)
     {
     }
 
@@ -30,7 +30,7 @@ public class ReservationOnCreatePreValidation : ReservationLogic, IPlugin
 
         if (UsePowerFxPlugins(localPluginContext)) return;
 
-        ValidatePluginExecutionContext(localPluginContext, MessageNameEnum.Create, StageEnum.PreValidation, contoso_Reservation.EntityLogicalName);
+        ValidatePluginExecutionContext(localPluginContext, MessageNameEnum.Create, StageEnum.PreOperation, contoso_Reservation.EntityLogicalName);
         IsSelectedListingAvailable(localPluginContext);
         ValidateFields(localPluginContext);
         IsSelectedListingAvailable(localPluginContext);

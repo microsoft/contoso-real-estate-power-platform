@@ -13,10 +13,10 @@ namespace ContosoRealEstate.BusinessLogic.Plugins;
 [CrmPluginRegistration(
     MessageNameEnum.Update,
     contoso_Reservation.EntityLogicalName,
-    StageEnum.PreValidation,
+    StageEnum.PreOperation,
     ExecutionModeEnum.Synchronous,
     "contoso_from,contoso_to,contoso_listing",
-    "ReservationOnUpdatePreValidation",
+    "ReservationOnUpdatePreOperation",
     1000,
     IsolationModeEnum.Sandbox,
     Image1Name = "PreImage",
@@ -26,10 +26,10 @@ namespace ContosoRealEstate.BusinessLogic.Plugins;
         contoso_Reservation.Fields.contoso_To + "," +
         contoso_Reservation.Fields.contoso_Listing
 )]
-public class ReservationOnUpdatePreValidation : ReservationLogic, IPlugin
+public class ReservationOnUpdatePreOperation : ReservationLogic, IPlugin
 {
-    public ReservationOnUpdatePreValidation(string unsecureConfiguration, string secureConfiguration)
-        : base(typeof(ReservationOnUpdatePreValidation), unsecureConfiguration, secureConfiguration)
+    public ReservationOnUpdatePreOperation(string unsecureConfiguration, string secureConfiguration)
+        : base(typeof(ReservationOnUpdatePreOperation), unsecureConfiguration, secureConfiguration)
     {
     }
 
@@ -43,7 +43,7 @@ public class ReservationOnUpdatePreValidation : ReservationLogic, IPlugin
 
         if (UsePowerFxPlugins(localPluginContext)) return;
 
-        ValidatePluginExecutionContext(localPluginContext, MessageNameEnum.Update, StageEnum.PreValidation, contoso_Reservation.EntityLogicalName);
+        ValidatePluginExecutionContext(localPluginContext, MessageNameEnum.Update, StageEnum.PreOperation, contoso_Reservation.EntityLogicalName);
         CheckForReadOnlyFields(localPluginContext);
         ValidateFields(localPluginContext);
         IsSelectedListingAvailable(localPluginContext);

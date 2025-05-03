@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24101.200" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24101.200" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24101.00200">
+<ImportExportXml version="9.2.25031.228" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25031.228" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25035.00244">
   <SolutionManifest>
     <UniqueName>ContosoRealEstateCore</UniqueName>
     <LocalizedNames>
@@ -103,133 +103,135 @@
       <RootComponent type="9" schemaName="contoso_reservationstatus" behavior="0" />
       <RootComponent type="91" id="{539003b6-e003-43c6-8be6-aaa55b4e0337}" schemaName="ContosoRealEstate.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=997b77ea5fb469e5" behavior="0" />
       <RootComponent type="91" id="{47591d7b-2b3b-4c72-abef-a05fc384c6cf}" schemaName="PaymentVirtualTableProvider, Version=1.0.0.25, Culture=neutral, PublicKeyToken=997b77ea5fb469e5" behavior="0" />
+      <RootComponent type="92" id="{59a1417c-6428-f011-8c4d-000d3a3006f9}" behavior="0" />
+      <RootComponent type="92" id="{62c46a53-6428-f011-8c4d-000d3a3006f9}" behavior="0" />
       <RootComponent type="92" id="{d96de364-d64d-ef11-a317-0022480bc9e8}" behavior="0" />
       <RootComponent type="92" id="{fde4c8cc-424a-ef11-a317-0022480bc9e8}" behavior="0" />
-      <RootComponent type="92" id="{2b642ba4-754d-ef11-accd-6045bd607fbb}" behavior="0" />
-      <RootComponent type="92" id="{ecf3ecca-754d-ef11-accd-002248b05f9c}" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
         <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
-          <package>msdynce_AppCommonAnchor (9.0.24095.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25024.10001">msdynce_AppCommonAnchor (9.0.25024.10001)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="Live Persona Card Form" parentDisplayName="Contact" solution="msdynce_AppCommonPatch201904 (9.0.24095.10001)" id="{449faa0e-f471-48ec-87d0-4719909546d2}">
-          <package>msdynce_AppCommonAnchor (9.0.24095.10001)</package>
+        <Required type="60" displayName="Live Persona Card Form" parentDisplayName="Contact" solution="msdynce_AppCommonPatch201904 (9.0.25024.10001)" id="{449faa0e-f471-48ec-87d0-4719909546d2}">
+          <package appName="msdynce_AppCommon" version="9.0.25024.10001">msdynce_AppCommonAnchor (9.0.25024.10001)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="Contact Quick Create" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}">
-          <package>msdynce_AppCommonAnchor (9.0.24095.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25024.10001">msdynce_AppCommonAnchor (9.0.25024.10001)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}">
-          <package>msdynce_AppCommonAnchor (9.0.24095.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25024.10001">msdynce_AppCommonAnchor (9.0.25024.10001)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="Social Profiles" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{7bb87dfd-ec3e-4ed9-8e3e-5725d3067295}">
-          <package>msdynce_AppCommonAnchor (9.0.24095.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25024.10001">msdynce_AppCommonAnchor (9.0.25024.10001)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="Contact Quick Form" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}">
-          <package>msdynce_AppCommonAnchor (9.0.24095.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25024.10001">msdynce_AppCommonAnchor (9.0.25024.10001)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2407.1)" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}">
-          <package>PowerPages_Core (1.0.2408.119)</package>
+          <package appName="Power Pages Core Package" version="1.0.2501.142">PowerPages_Core (1.0.2501.142)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="Contact Reference Panel" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{d880c3cf-80e2-42f3-82f9-24d040d09f17}">
-          <package>msdynce_AppCommonAnchor (9.0.24095.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25024.10001">msdynce_AppCommonAnchor (9.0.25024.10001)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="Recent Cases and Entitlements" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}">
-          <package>msdynce_AppCommonAnchor (9.0.24095.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25024.10001">msdynce_AppCommonAnchor (9.0.25024.10001)</package>
         </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
         <Dependent type="80" schemaName="contoso_ContosoRealEstateAdministration" displayName="Contoso Real Estate Administration" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="contoso_Contoso.ImageGrid" displayName="contoso_Contoso.ImageGrid" solution="ContosoRealEstateCustomControls (1.0.4.0)" />
+        <Required type="66" schemaName="contoso_Contoso.ImageGrid" displayName="contoso_Contoso.ImageGrid" solution="ContosoRealEstateCustomControls (1.0.14.0)" />
         <Dependent type="300" schemaName="contoso_contosorealestatelistingsadmin_b38c2" displayName="Contoso Real Estate Listings Admin" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="contoso_Contoso.ImageGrid" displayName="contoso_Contoso.ImageGrid" solution="ContosoRealEstateCustomControls (1.0.4.0)" />
+        <Required type="66" schemaName="contoso_Contoso.ImageGrid" displayName="contoso_Contoso.ImageGrid" solution="ContosoRealEstateCustomControls (1.0.14.0)" />
         <Dependent type="60" displayName="Listing" parentDisplayName="Listing" id="{530bff54-7d3d-ef11-8409-0022480bc9e8}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="contoso_Contoso.ImageGrid" displayName="contoso_Contoso.ImageGrid" solution="ContosoRealEstateCustomControls (1.0.4.0)" />
+        <Required type="66" schemaName="contoso_Contoso.ImageGrid" displayName="contoso_Contoso.ImageGrid" solution="ContosoRealEstateCustomControls (1.0.14.0)" />
         <Dependent type="60" displayName="Listing (Portal)" parentDisplayName="Listing" id="{bf74b35e-7d3d-ef11-8409-0022480bc9e8}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.ActivityCalendarControl.ActivityCalendarControl" displayName="MscrmControls.ActivityCalendarControl.ActivityCalendarControl" solution="msdyn_UCICalendar (1.0.0.4278)">
-          <package>msdyn_TimelineExtended (1.0.0.1408)</package>
-        </Required>
-        <Dependent type="60" displayName="Listing" parentDisplayName="Listing" id="{530bff54-7d3d-ef11-8409-0022480bc9e8}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.ActivityCalendarControl.ActivityCalendarControl" displayName="MscrmControls.ActivityCalendarControl.ActivityCalendarControl" solution="msdyn_UCICalendar (1.0.0.4278)">
-          <package>msdyn_TimelineExtended (1.0.0.1408)</package>
-        </Required>
-        <Dependent type="60" displayName="Listing (Portal)" parentDisplayName="Listing" id="{bf74b35e-7d3d-ef11-8409-0022480bc9e8}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Grid.PCFGridControl" displayName="MscrmControls.Grid.PCFGridControl" solution="BaseCustomControlsCore (9.0.2409.5017)">
-          <package>BaseCustomControlsCore (9.0.2409.5017)</package>
+        <Required type="66" schemaName="MscrmControls.ActivityCalendarControl.ActivityCalendarControl" displayName="MscrmControls.ActivityCalendarControl.ActivityCalendarControl" solution="msdyn_UCICalendar (1.0.0.5660)">
+          <package appName="msdyn_CustomControlsExtended" version="1.0.0.2781">msdyn_TimelineExtended (1.0.0.2781)</package>
         </Required>
         <Dependent type="60" displayName="Listing" parentDisplayName="Listing" id="{530bff54-7d3d-ef11-8409-0022480bc9e8}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Grid.PCFGridControl" displayName="MscrmControls.Grid.PCFGridControl" solution="BaseCustomControlsCore (9.0.2409.5017)">
-          <package>BaseCustomControlsCore (9.0.2409.5017)</package>
+        <Required type="66" schemaName="MscrmControls.ActivityCalendarControl.ActivityCalendarControl" displayName="MscrmControls.ActivityCalendarControl.ActivityCalendarControl" solution="msdyn_UCICalendar (1.0.0.5660)">
+          <package appName="msdyn_CustomControlsExtended" version="1.0.0.2781">msdyn_TimelineExtended (1.0.0.2781)</package>
         </Required>
         <Dependent type="60" displayName="Listing (Portal)" parentDisplayName="Listing" id="{bf74b35e-7d3d-ef11-8409-0022480bc9e8}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="90" schemaName="Microsoft.PowerFx.Evaluator, Microsoft.PowerFx.PlexPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="Microsoft.PowerFx.Evaluator" solution="msft_PowerfxRuleSolution (1.0.0.62)" id="{462b3e8f-beb4-4981-9b87-a60c2162a9f7}">
-          <package>PowerfxRuleApp_Anchor (1.0.0.0)</package>
+        <Required type="66" schemaName="MscrmControls.Grid.PCFGridControl" displayName="MscrmControls.Grid.PCFGridControl" solution="BaseCustomControlsCore (9.0.2503.1002)">
+          <package appName="Base Custom Controls" version="9.0.2503.1002">BaseCustomControlsCore (9.0.2503.1002)</package>
         </Required>
-        <Dependent type="92" id="{2b7386df-089e-ef11-8a6a-00224809f11c}" />
+        <Dependent type="60" displayName="Listing" parentDisplayName="Listing" id="{530bff54-7d3d-ef11-8409-0022480bc9e8}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="90" schemaName="Microsoft.PowerFx.Evaluator, Microsoft.PowerFx.PlexPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="Microsoft.PowerFx.Evaluator" solution="msft_PowerfxRuleSolution (1.0.0.62)" id="{462b3e8f-beb4-4981-9b87-a60c2162a9f7}">
-          <package>PowerfxRuleApp_Anchor (1.0.0.0)</package>
+        <Required type="66" schemaName="MscrmControls.Grid.PCFGridControl" displayName="MscrmControls.Grid.PCFGridControl" solution="BaseCustomControlsCore (9.0.2503.1002)">
+          <package appName="Base Custom Controls" version="9.0.2503.1002">BaseCustomControlsCore (9.0.2503.1002)</package>
         </Required>
-        <Dependent type="92" id="{d4f713cf-089e-ef11-8a6a-00224809f11c}" />
+        <Dependent type="60" displayName="Listing (Portal)" parentDisplayName="Listing" id="{bf74b35e-7d3d-ef11-8409-0022480bc9e8}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="90" schemaName="Microsoft.PowerFx.Evaluator, Microsoft.PowerFx.PlexPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="Microsoft.PowerFx.Evaluator" solution="msft_PowerfxRuleSolution (1.0.0.62)" id="{462b3e8f-beb4-4981-9b87-a60c2162a9f7}">
-          <package>PowerfxRuleApp_Anchor (1.0.0.0)</package>
+        <Required type="90" schemaName="Microsoft.PowerFx.Evaluator, Microsoft.PowerFx.PlexPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="Microsoft.PowerFx.Evaluator" solution="msft_PowerfxRuleSolution (1.0.0.71)" id="{462b3e8f-beb4-4981-9b87-a60c2162a9f7}">
+          <package appName="PowerfxRuleApp Package" version="1.0.0.71">PowerfxRuleApp_Anchor (1.0.0.71)</package>
+        </Required>
+        <Dependent type="92" id="{d96de364-d64d-ef11-a317-0022480bc9e8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="90" schemaName="Microsoft.PowerFx.Evaluator, Microsoft.PowerFx.PlexPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="Microsoft.PowerFx.Evaluator" solution="msft_PowerfxRuleSolution (1.0.0.71)" id="{462b3e8f-beb4-4981-9b87-a60c2162a9f7}">
+          <package appName="PowerfxRuleApp Package" version="1.0.0.71">PowerfxRuleApp_Anchor (1.0.0.71)</package>
+        </Required>
+        <Dependent type="92" id="{fde4c8cc-424a-ef11-a317-0022480bc9e8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="90" schemaName="Microsoft.PowerFx.Evaluator, Microsoft.PowerFx.PlexPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="Microsoft.PowerFx.Evaluator" solution="msft_PowerfxRuleSolution (1.0.0.71)" id="{462b3e8f-beb4-4981-9b87-a60c2162a9f7}">
+          <package appName="PowerfxRuleApp Package" version="1.0.0.71">PowerfxRuleApp_Anchor (1.0.0.71)</package>
         </Required>
         <Dependent type="CustomAPI" displayName="contoso_IsListingAvailable" id.uniquename="contoso_IsListingAvailable" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="90" schemaName="Microsoft.PowerFx.Evaluator, Microsoft.PowerFx.PlexPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="Microsoft.PowerFx.Evaluator" solution="msft_PowerfxRuleSolution (1.0.0.62)" id="{462b3e8f-beb4-4981-9b87-a60c2162a9f7}">
-          <package>PowerfxRuleApp_Anchor (1.0.0.0)</package>
+        <Required type="90" schemaName="Microsoft.PowerFx.Evaluator, Microsoft.PowerFx.PlexPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="Microsoft.PowerFx.Evaluator" solution="msft_PowerfxRuleSolution (1.0.0.71)" id="{462b3e8f-beb4-4981-9b87-a60c2162a9f7}">
+          <package appName="PowerfxRuleApp Package" version="1.0.0.71">PowerfxRuleApp_Anchor (1.0.0.71)</package>
         </Required>
         <Dependent type="CustomAPI" displayName="contoso_ReserveListing" id.uniquename="contoso_ReserveListing" />
       </MissingDependency>
       <MissingDependency>
         <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">
-          <package>PowerAppsAppFramework_Anchor (1.0.0.16)</package>
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.17">PowerAppsAppFramework_Anchor (1.0.0.17)</package>
         </Required>
         <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=contoso_ContosoRealEstateAdministration,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="contoso_ContosoRealEstateAdministration" id.settingdefinitionid.uniquename="AppChannel" />
       </MissingDependency>
