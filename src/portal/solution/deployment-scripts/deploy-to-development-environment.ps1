@@ -9,7 +9,7 @@ Write-Host "This script will deploy the $solutionName solution to your developme
 
 # -----------------------------------------------------------------------
 # Import the environment variables
-$publicRepo = "https://github.com/scottdurow/contoso-real-estate-power/"
+$publicRepo = "https://github.com/microsoft/contoso-real-estate-power-platform/"
 $repoRoot =  Join-Path -Path $PSScriptRoot -ChildPath "/../../../../"
 # Resolve to an absolute path
 $repoRoot = (Get-Item -Path $repoRoot).FullName

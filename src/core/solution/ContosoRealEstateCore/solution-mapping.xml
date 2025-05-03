@@ -6,7 +6,7 @@
     <!-- Note: The nupkg plugin package is built and packaged using an additional MSBuild target in the solution csproj. It is also renamed using another target to remove the package version so it can be mapped -->
     <!--<FileToFile map="pluginpackages/contoso_PaymentVirtualTableProvider/package/contoso_PaymentVirtualTableProvider.nupkg" to="../../../../../plugins/payments-virtual-table-provider/PaymentVirtualTableProvider/bin/PaymentVirtualTableProvider.1.0.0.nupkg" />-->
     <!-- Plugin Managed Identities don't yet support Nuget plugins - so we use a standard one -->
-    <FileToFile map="PluginAssemblies/PluginAssemblies/PaymentVirtualTableProvider-47591D7B-2B3B-4C72-ABEF-A05FC384C6CF/PaymentVirtualTableProvider.dll" to="../../../plugins/payments-virtual-table-provider/PaymentVirtualTableProvider/bin/publish/PaymentVirtualTableProvider.dll" />
+    <!-- <FileToFile map="PluginAssemblies/PaymentVirtualTableProvider-47591D7B-2B3B-4C72-ABEF-A05FC384C6CF/PaymentVirtualTableProvider.dll" to="../../../plugins/payments-virtual-table-provider/PaymentVirtualTableProvider/bin/PaymentVirtualTableProvider.dll" /> -->
 
     <!-- Map to the client hooks JavaScript web resource -->
     <FileToFile map="mda-client-hooks.js" to="../../../mda-client-hooks/dist/ClientHooks.js" /> 
