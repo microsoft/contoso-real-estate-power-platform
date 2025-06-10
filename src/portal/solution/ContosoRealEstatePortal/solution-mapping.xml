@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Mapping>
     <!-- Map to the portal-ui-bundle.js -->
-    <FileToFile map="powerpagecomponents/628cc1df-0aa3-ef11-8a6a-6045bd0313fc/filecontent/portal-ui-bundle.js" to="../../../portal-react-ui/dist/bundle.js" /> 
+    <FileToFile map="powerpagecomponents/628cc1df-0aa3-ef11-8a6a-6045bd0313fc/filecontent/portal-ui-bundle.js" to="../../../../../portal-react-ui/dist/bundle.js" /> 
 </Mapping>
