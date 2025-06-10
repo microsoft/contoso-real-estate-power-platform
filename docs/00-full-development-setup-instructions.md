@@ -667,8 +667,7 @@ When flows that are added to power pages are deployed, the trigger is not update
 
 1. Open your site in [Power Pages](https://make.powerpages.microsoft.com/)
 1. Select  **Set Up** -> **Integrations** -> **Cloud Flows**
-1. For each flow in the site, select the **ellipsis ...**
-1. **Edit** - **Save** (without changing anything). 
+1. For each flow in the site, select the **Register Flow** icon.
 1. Power Pages will re-configure the trigger to point at the cloud flow in the current environment.
 
 ### 🤖Publish Chatbot
@@ -687,7 +686,7 @@ In order that you can test the portal chatbot in Copilot Studio you will need to
 1. Under Web Redirect URIs, select **Add URI**
 1. Enter `https://token.botframework.com/.auth/web/redirect` 
 1. Select **Save**
-1. Open [Copilot Studio](https://copilotstudio.microsoft.com/) -> **Select your environment** using the picker on the top right -> Open the **Contoso Real Estate Bot** under **Copilots**
+1. Open [Copilot Studio](https://copilotstudio.microsoft.com/) -> **Select your environment** using the picker on the top right -> Open the **Contoso Real Estate Bot** under **Agents**
 > [!NOTE] 
 > If this is your first time using Copilot Studio, Select **Start a free trial.**
 14. Select **Settings** on the top right

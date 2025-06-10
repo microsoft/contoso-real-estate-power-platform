@@ -33,7 +33,7 @@ $publicRepo/releases?q=ContosoRealEstateCore&expanded=true
 Write-Host "Press any key to continue..."
 $null = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
-# Check that the ContosoRealEsateCustomControls_managed.zip file exists
+# Check that the ContosoRealEstateCustomControls_managed.zip file exists
 if (-not (Test-Path -Path "$tempReleaseFolder/ContosoRealEstateCustomControls_managed.zip")) {
     Write-Host "The ContosoRealEstateCustomControls_managed.zip file does not exist in the temp_releases folder." -ForegroundColor Red
     Write-Host @"
@@ -74,6 +74,13 @@ if (-not (ConfirmPrompt -message "Are you sure you want to deploy to the environ
     Write-Host "Exiting" -ForegroundColor Yellow
     exit
 }
+
+# Enable PCF controls in Canvas Apps
+pac env update-settings --name "iscustomcontrolsincanvasappsenabled" --value true
+
+# Enable JavaScript attachments for the portal
+pac env update-settings --name "blockedattachments" --value "ade;adp;app;asa;ashx;asmx;asp;bas;bat;cdx;cer;chm;class;cmd;com;config;cpl;crt;csh;dll;exe;fxp;hlp;hta;htr;htw;ida;idc;idq;inf;ins;isp;its;jar;jse;ksh;lnk;mad;maf;mag;mam;maq;mar;mas;mat;mau;mav;maw;mda;mdb;mde;mdt;mdw;mdz;msc;msh;msh1;msh1xml;msh2;msh2xml;mshxml;msi;msp;mst;ops;pcd;pif;prf;prg;printer;pst;reg;rem;scf;scr;sct;shb;shs;shtm;shtml;soap;stm;tmp;url;vb;vbe;vbs;vsmacros;vss;vst;vsw;ws;wsc;wsf;wsh"
+
 
 # Deploy the dependencies
 Write-Host "Deploying 'ContosoRealEstateCustomControls_managed.zip' to '$environmentName'" -ForegroundColor Green
