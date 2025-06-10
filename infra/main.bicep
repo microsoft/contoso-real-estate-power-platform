@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 // Note: Minimum Bicep version required to deploy this quickstart template is v0.29.45.
 // See: https://learn.microsoft.com/en-us/graph/templates/?view=graph-bicep-1.0
-extension microsoftGraph
+extension 'br:mcr.microsoft.com/bicep/extensions/microsoftgraph/v1.0:0.1.9-preview'
 
 targetScope = 'subscription'
 
