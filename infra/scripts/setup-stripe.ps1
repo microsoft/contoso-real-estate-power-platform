@@ -23,8 +23,7 @@ Write-Host @"
 Locate the Stripe API Key in your Stripe account by:
 1. Logging into your Stripe account
 2. Navigating to the Developers-> API Keys section https://dashboard.stripe.com/test/apikeys
-3. Select 'Reveal test key'
-4. Copy the 'Secret key' by clicking on it, and enter it below
+3. Copy the 'Secret key' by clicking on it, and enter it below
 
 "@ -ForegroundColor Cyan
 $stripeApiKey = Read-Host -Prompt "Please enter the Stripe API Key (Right click to paste)"
@@ -45,9 +44,9 @@ Register a new webhook endpoint in your Stripe account:
 You can do this by:
 1. Logging into your Stripe account
 2. Navigating to the Developers -> Webhooks section https://dashboard.stripe.com/test/workbench/webhooks
-4. Select '+ Create an endpoint'
+4. Select '+ Add destination'
 5. Select Checkout -> Select all Checkout events.
-6. Select Continue.
+6. Select Continue -> Webhook endpoint -> Continue
 7. Entering the following URL in the 'Endpoint URL' field
     $functionUrl
 8. Select on 'Create destination'
