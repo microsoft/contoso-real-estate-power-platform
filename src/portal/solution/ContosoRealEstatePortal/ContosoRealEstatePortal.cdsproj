@@ -23,8 +23,8 @@
     <SolutionPackageEnableLocalization>false</SolutionPackageEnableLocalization>
     <SolutionPackageMapFilePath>$(MSBuildThisFileDirectory)\solution-mapping.xml</SolutionPackageMapFilePath> 
     <SolutionPackageErrorLevel>Info</SolutionPackageErrorLevel>
-    <SolutionPackagerWorkingDirectory>$(MSBuildThisFileDirectory)\SolutionPackager</SolutionPackagerWorkingDirectory>
-    <SolutionPackagerMetadataWorkingDirectory>$(MSBuildThisFileDirectory)\Metadata</SolutionPackagerMetadataWorkingDirectory>
+    <!-- <SolutionPackagerWorkingDirectory>$(MSBuildThisFileDirectory)\SolutionPackager</SolutionPackagerWorkingDirectory>
+    <SolutionPackagerMetadataWorkingDirectory>$(MSBuildThisFileDirectory)\Metadata</SolutionPackagerMetadataWorkingDirectory> -->
     <SolutionPackageLogFilePath>$(MSBuildThisFileDirectory)\SolutionPackagerLogs\SolutionPackager$([System.DateTime]::Now.ToString("dd_MM_yyyy_HH_mm_ss")).log</SolutionPackageLogFilePath>
   </PropertyGroup>
 
