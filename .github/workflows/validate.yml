@@ -1,4 +1,6 @@
 name: Validate
+permissions:
+  contents: read
 # Validate every push to check everything builds
 on:
   push:
