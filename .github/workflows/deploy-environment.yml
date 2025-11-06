@@ -2,6 +2,9 @@
 # The solutions are deployed in sequential order one at a time
 name: _Deploy Environment
 
+permissions:
+  contents: read
+
 on:
   workflow_call:
     inputs:
