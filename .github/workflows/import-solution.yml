@@ -37,14 +37,14 @@ jobs:
     name: ${{ inputs.solutionName}} 
     steps: 
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         
     - name: Install semver
       run: npm install semver 
       
     - name: Get Most Recent Release Matching Regex
       id: get_release
-      uses: actions/github-script@v7
+      uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
       with:
         script: |
           const fs = require('fs');
@@ -109,7 +109,7 @@ jobs:
       working-directory: ${{ github.workspace }}
 
     - name: Install pac
-      uses: microsoft/powerplatform-actions/actions-install@v1
+      uses: microsoft/powerplatform-actions/actions-install@0e44beb5424af932af47250a2568eba4c259e3d8 # v1.10.0
       with:
         add-tools-to-path: true
         

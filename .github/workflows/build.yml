@@ -43,12 +43,12 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       with:
         fetch-depth: 0
 
     - name: Semantic Versioning
-      uses: paulhatch/semantic-version@v5.3.0
+      uses: paulhatch/semantic-version@8d3552d38408b608e90e76237a2a5ac9fe524d04 # v5.3.0
       id: get_version
       with:
         tag_prefix: "v"
@@ -72,7 +72,7 @@ jobs:
       # This is a check to ensure that the release is not already deployed
       # Skip if the build is forced
       if: github.event_name != 'pull_request' && (steps.get_version.outputs.changed == 'true' || github.event.inputs.forceRebuild == 'true')
-      uses: actions/github-script@v7
+      uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
       with:
         debug: true
         script: |
@@ -87,7 +87,7 @@ jobs:
           }
 
     - name: Install pac
-      uses: microsoft/powerplatform-actions/actions-install@v1
+      uses: microsoft/powerplatform-actions/actions-install@0e44beb5424af932af47250a2568eba4c259e3d8 # v1.10.0
       with:
         add-tools-to-path: true
 
@@ -143,7 +143,7 @@ jobs:
 
     - name: Setup .NET
       if: steps.get_version.outputs.changed == 'true' || github.event.inputs.forceRebuild == 'true'
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
       with:
         dotnet-version: 8.0.x
 
@@ -195,7 +195,7 @@ jobs:
       working-directory: "."
     
     - name: Publish Artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
         name: build-artifacts-${{ matrix.solutionName }}
         path: '${{ matrix.changeScope }}/${{ matrix.solutionSubFolder }}/bin/**'
@@ -219,7 +219,7 @@ jobs:
 
     - name: Create Release
       if: github.event_name != 'pull_request' && startsWith(github.ref, 'refs/heads/release') && (steps.get_version.outputs.changed == 'true' || github.event.inputs.forceRebuild == 'true')
-      uses: softprops/action-gh-release@v2
+      uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
