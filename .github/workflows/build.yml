@@ -43,12 +43,12 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         fetch-depth: 0
 
     - name: Semantic Versioning
-      uses: paulhatch/semantic-version@8d3552d38408b608e90e76237a2a5ac9fe524d04 # v5.3.0
+      uses: paulhatch/semantic-version@4d6da96a9bc3116da3613309a11ff75fba58eb8d # v6.0.4
       id: get_version
       with:
         tag_prefix: "v"
@@ -72,7 +72,7 @@ jobs:
       # This is a check to ensure that the release is not already deployed
       # Skip if the build is forced
       if: github.event_name != 'pull_request' && (steps.get_version.outputs.changed == 'true' || github.event.inputs.forceRebuild == 'true')
-      uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
+      uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
       with:
         debug: true
         script: |
@@ -143,7 +143,7 @@ jobs:
 
     - name: Setup .NET
       if: steps.get_version.outputs.changed == 'true' || github.event.inputs.forceRebuild == 'true'
-      uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
+      uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
       with:
         dotnet-version: 8.0.x
 
@@ -195,7 +195,7 @@ jobs:
       working-directory: "."
     
     - name: Publish Artifacts
-      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
       with:
         name: build-artifacts-${{ matrix.solutionName }}
         path: '${{ matrix.changeScope }}/${{ matrix.solutionSubFolder }}/bin/**'
@@ -219,7 +219,7 @@ jobs:
 
     - name: Create Release
       if: github.event_name != 'pull_request' && startsWith(github.ref, 'refs/heads/release') && (steps.get_version.outputs.changed == 'true' || github.event.inputs.forceRebuild == 'true')
-      uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
+      uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
