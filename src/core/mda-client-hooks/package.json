@@ -12,7 +12,7 @@
     "test": "jest unit. --collectCoverage"
   },
   "dependencies": {
-    "moment": "^2.29.4"
+    "moment": "^2.31.0"
   },
   "devDependencies": {
     "@microsoft/eslint-plugin-power-apps": "^0.2.51",
